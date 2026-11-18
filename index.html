@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="th" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BXNG — Roblox Luau Developer & Game UI/UX Designer</title>
+  <meta name="description" content="Portfolio of BXNG: Roblox Luau Scripting (Videos) & Game UI/UX Design (Images).">
+
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Ambient Background Glow & Cyber Grid -->
+  <div class="ambient-glow glow-1" aria-hidden="true"></div>
+  <div class="ambient-glow glow-2" aria-hidden="true"></div>
+  <div class="grid-overlay" aria-hidden="true"></div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="#" class="brand">
+        <span class="brand-logo-gem" aria-hidden="true">◆</span>
+        <span class="brand-name" id="brandName">BXNG<span class="brand-dot">.DEV</span></span>
+        <span class="role-tag mono-meta">ROBLOX DEVELOPER</span>
+      </a>
+      
+      <div class="header-right">
+        <nav class="nav">
+          <a href="#scripts" class="nav-link">งาน Script (วิดีโอ)</a>
+          <a href="#uiux" class="nav-link">งาน UI/UX (รูปภาพ)</a>
+          <a href="#contact" class="nav-link">ติดต่อจ้างงาน</a>
+        </nav>
+        <button id="themeToggle" class="theme-btn" aria-label="สลับธีม สว่าง/มืด" title="สลับธีม">
+          <span class="theme-icon">◐</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <h1 class="hero-title">
+        <span id="heroTitle">Roblox Luau Developer</span><br>
+        <span class="gradient-text" id="heroHighlight">&amp; Game UI/UX Designer</span>
+      </h1>
+
+      <div class="hero-tags">
+        <span class="hero-tag">Luau Scripting · 2 ปี</span>
+        <span class="hero-tag">Game UI/UX · 1 ปี</span>
+        <span class="hero-tag tag-accent">Open for Commissions</span>
+      </div>
+
+      <div class="hero-actions">
+        <a href="#scripts" class="btn btn-primary">
+          <span>ดูคลิปวิดีโอระบบเกม</span>
+          <span class="btn-icon">↓</span>
+        </a>
+        <a href="#uiux" class="btn btn-outline">
+          <span>ดูผลงานรูป Game UI</span>
+          <span class="btn-icon">🖼️</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- SECTION 01: งาน SCRIPTING (แสดงแบบแถวเดียว Carousel + ปุ่มดูทั้งหมด) -->
+    <section class="section" id="scripts">
+      <div class="section-head">
+        <div class="section-title-wrap">
+          <span class="section-num mono-meta">01</span>
+          <h2 class="section-title">Luau Scripting (Video Showcases)</h2>
+        </div>
+        <div class="section-actions">
+          <button class="view-all-btn" id="toggleScriptsViewBtn" title="สลับโหมดแสดงผล">
+            <span class="btn-text">ดูทั้งหมด ⊞</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Carousel Row Wrapper พร้อมปุ่มเลื่อนซ้าย-ขวา -->
+      <div class="carousel-wrapper">
+        <button class="carousel-nav-btn prev" id="scriptsPrevBtn" aria-label="เลื่อนซ้าย">‹</button>
+        <div class="media-carousel" id="scriptVideosContainer"></div>
+        <button class="carousel-nav-btn next" id="scriptsNextBtn" aria-label="เลื่อนขวา">›</button>
+      </div>
+    </section>
+
+    <!-- SECTION 02: งาน GAME UI/UX (แสดงแบบแถวเดียว Carousel + ปุ่มดูทั้งหมด) -->
+    <section class="section" id="uiux">
+      <div class="section-head">
+        <div class="section-title-wrap">
+          <span class="section-num mono-meta">02</span>
+          <h2 class="section-title">Game UI/UX Design (Showcase)</h2>
+        </div>
+        <div class="section-actions">
+          <button class="view-all-btn" id="toggleUiuxViewBtn" title="สลับโหมดแสดงผล">
+            <span class="btn-text">ดูทั้งหมด ⊞</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Carousel Row Wrapper พร้อมปุ่มเลื่อนซ้าย-ขวา -->
+      <div class="carousel-wrapper">
+        <button class="carousel-nav-btn prev" id="uiuxPrevBtn" aria-label="เลื่อนซ้าย">‹</button>
+        <div class="media-carousel" id="uiuxImagesContainer"></div>
+        <button class="carousel-nav-btn next" id="uiuxNextBtn" aria-label="เลื่อนขวา">›</button>
+      </div>
+    </section>
+
+    <!-- SECTION 03: ช่องทางติดต่อจ้างงาน -->
+    <section class="section" id="contact">
+      <div class="section-head">
+        <div class="section-title-wrap">
+          <span class="section-num mono-meta">03</span>
+          <h2 class="section-title">Get in Touch</h2>
+        </div>
+        <span class="section-meta mono-meta">ช่องทางติดต่อจ้างงาน</span>
+      </div>
+
+      <div class="contact-card-box">
+        <div class="contact-header">
+          <h3 class="contact-headline">พร้อมเริ่มโปรเจกต์เกมของคุณแล้วหรือยัง?</h3>
+          <p class="contact-sub">
+            รับทำทั้งงานระบบ Scripting (Luau) หรือานดีไซน์ Game UI/UX ทักมาปรึกษาหรือส่งรายละเอียดบรีฟงานได้ตลอดครับ
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Discord Featured Card -->
+          <div class="contact-card discord-primary-card">
+            <div class="contact-card-info">
+              <span class="contact-name">Discord</span>
+              <span class="contact-id mono-meta" id="discordUsernameDisplay">@bxng_dev</span>
+            </div>
+            <button class="btn-copy" id="copyDiscordBtn" aria-label="คัดลอก Discord Tag">
+              <span id="copyBtnText">คัดลอก Tag 📋</span>
+            </button>
+          </div>
+
+          <!-- Roblox Profile Card -->
+          <a href="#" id="robloxLink" target="_blank" rel="noopener noreferrer" class="contact-card">
+            <div class="contact-card-info">
+              <span class="contact-name">Roblox Profile</span>
+              <span class="contact-id mono-meta">ดูผลงานและเกมในคลัง</span>
+            </div>
+            <span class="card-arrow">↗</span>
+          </a>
+
+          <!-- GitHub Card -->
+          <a href="#" id="githubLink" target="_blank" rel="noopener noreferrer" class="contact-card">
+            <div class="contact-card-info">
+              <span class="contact-name">GitHub</span>
+              <span class="contact-id mono-meta" id="githubDisplay">เปิดคลังโค้ด</span>
+            </div>
+            <span class="card-arrow">↗</span>
+          </a>
+
+          <!-- Email Card -->
+          <a href="#" id="emailLink" class="contact-card">
+            <div class="contact-card-info">
+              <span class="contact-name">Email</span>
+              <span class="contact-id mono-meta" id="emailDisplay">ส่งอีเมลคุยงาน</span>
+            </div>
+            <span class="card-arrow">↗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="mono-meta">© <span id="year"></span> <span id="footerBrand">BXNG.DEV</span> · ROBLOX LUAU &amp; GAME UI/UX SPECIALIST</span>
+      <a href="#" class="back-to-top mono-meta">↑ กลับขึ้นบนสุด</a>
+    </div>
+  </footer>
+
+  <!-- 1. ไฟล์ Config -->
+  <script src="config.js"></script>
+  <!-- 2. สคริปต์หลัก -->
+  <script src="script.js"></script>
+</body>
+</html>
